@@ -1,10 +1,3 @@
-import { gsap } from "gsap";
-
-gsap.timeline()
-    .to('.loading .hider', { top: 0, duration: .8, ease: "Power4.easeOut", delay: .5 })
-    .to('.loading span', { display: "none", duration: 0})
-    .to('.loading', { height: 0, duration: .8, ease: "Power4.easeOut"}, '<-0.3')
-
 const videoLoop = document.getElementById('video-loop')
 const video = document.getElementById('video')
 const cursor = document.querySelector('.video__cursor')
@@ -45,4 +38,3 @@ videoLoop.addEventListener('mouseleave', (e) => {
     cursor.style.left = "50%"
     cursor.style.top = "50%"
 })
-
